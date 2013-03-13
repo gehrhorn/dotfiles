@@ -37,3 +37,5 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+#
+export RSENSE_HOME='/csnzoo/gehrhorn/opt/rsense-0.3'

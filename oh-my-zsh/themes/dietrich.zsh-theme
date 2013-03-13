@@ -14,10 +14,10 @@ ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[white]%} <%{$fg[magenta]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 
 # Do nothing if the branch is clean (no changes).
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$reset_color%}>"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$reset_color%}> Ω"
 
 # Add a yellow ✗ if the branch is dirty
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$reset_color%}> %{$fg[yellow]%}✗"
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$reset_color%}> %{$fg[yellow]%}Χ"
 
 # Put it all together!
 PROMPT="$JARIN_CURRENT_RUBY_ $JARIN_CURRENT_LOCA_ "
