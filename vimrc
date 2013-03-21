@@ -14,4 +14,11 @@ let g:rsenseUseOmniFunc = 1
 set expandtab
 set tabstop=2
 set shiftwidth=2
+
+" line numbering
 set number
+
+" settings for solarized colors
+syntax enable
+set background=dark
+colorscheme solarized
