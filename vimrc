@@ -18,6 +18,9 @@ set shiftwidth=2
 " line numbering
 set number
 
+" highlight long columns
+match ErrorMsg /\%81v.\+/
+
 " settings for solarized colors
 syntax enable
 set background=dark
