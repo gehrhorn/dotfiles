@@ -17,7 +17,7 @@ set shiftwidth=2
 
 " line numbering
 set number
-
+set ruler
 " highlight long columns
 match ErrorMsg /\%81v.\+/
 
