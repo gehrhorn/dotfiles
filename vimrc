@@ -21,10 +21,6 @@ set ruler
 " highlight long columns
 match ErrorMsg /\%81v.\+/
 
-" settings for solarized colors
-syntax enable
-set background=dark
-colorscheme solarized
 
 " Configure browser for haskell_doc.vim
 let g:haddock_browser = "open"
