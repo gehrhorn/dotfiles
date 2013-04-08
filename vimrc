@@ -34,3 +34,7 @@ set smartcase
 set title
 set scrolloff=3
 
+
+" Tagbar configuration
+nmap <F8> :TagbarToggle<CR>
+
