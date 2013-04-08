@@ -25,3 +25,7 @@ match ErrorMsg /\%81v.\+/
 syntax enable
 set background=dark
 colorscheme solarized
+
+" Configure browser for haskell_doc.vim
+let g:haddock_browser = "open"
+let g:haddock_browser_callformat = "%s %s"
