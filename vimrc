@@ -21,3 +21,16 @@ match ErrorMsg /\%81v.\+/
 " Configure browser for haskell_doc.vim
 let g:haddock_browser = "open"
 let g:haddock_browser_callformat = "%s %s"
+
+" Settings from 'Configuring vim right'
+set hidden
+nnoremap ' `
+nnoremap ` '
+let mapleader = ","
+set history=1000
+set wildmode=list:longest
+set ignorecase
+set smartcase
+set title
+set scrolloff=3
+
