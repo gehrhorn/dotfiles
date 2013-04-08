@@ -38,7 +38,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 #
-export RSENSE_HOME='$HOME/opt/rsense-0.3'
 
 # Mac book colors
 export CLICOLOR=1
