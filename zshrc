@@ -41,4 +41,4 @@ source $ZSH/oh-my-zsh.sh
 
 # Mac book colors
 export CLICOLOR=1
-export LSCOLORS=ExFxCxDxBxegedabagacad
+export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
