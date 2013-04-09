@@ -34,6 +34,10 @@ set smartcase
 set title
 set scrolloff=3
 
+syntax enable
+set background=dark
+colorscheme solarized
+
 " Tagbar configuration
 nmap <F8> :TagbarToggle<CR>
 
