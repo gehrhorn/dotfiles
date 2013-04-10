@@ -37,7 +37,6 @@ set smartcase
 set title
 set scrolloff=3
 
-let g:solarized_termcolors=256
 syntax enable
 set background=dark
 colorscheme solarized
@@ -66,4 +65,4 @@ set listchars=tab:→\ ,eol:¬
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
-nmap <F5>:buffers<CR>:buffer<Space>
+nmap <F5> :buffers<CR>:buffer<Space>
