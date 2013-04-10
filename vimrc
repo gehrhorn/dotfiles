@@ -20,7 +20,7 @@ match ErrorMsg /\%81v.\+/
 " Configure browser for haskell_doc.vim
 let g:haddock_browser = "open"
 let g:haddock_browser_callformat = "%s %s"
-
+let mapleader = ","
 
 " Press leader l to toggle highlighting
 nmap <leader>h :set hlsearch! hlsearch?<CR>
@@ -29,7 +29,6 @@ nmap <leader>h :set hlsearch! hlsearch?<CR>
 set hidden
 nnoremap ' `
 nnoremap ` '
-let mapleader = ","
 set history=1000
 set wildmode=list:longest
 set ignorecase
