@@ -73,3 +73,7 @@ highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
 nmap <F5> :buffers<CR>:buffer<Space>
+
+let mapleader = ","
+nmap <leader>v :edit $MYVIMRC<CR>
+
