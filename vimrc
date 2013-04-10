@@ -25,6 +25,14 @@ let mapleader = ","
 " Press leader l to toggle highlighting
 nmap <leader>h :set hlsearch! hlsearch?<CR>
 
+" don't put cursor at the start of the line unneccessarily
+
+set nostartofline
+
+" don't insert leading comment characters when pressing `o` or `O` in normal
+" mode
+set formatoptions-=o
+
 " Settings from 'Configuring vim right'
 set hidden
 nnoremap ' `
