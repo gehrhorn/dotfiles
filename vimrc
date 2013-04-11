@@ -34,7 +34,7 @@ let g:haddock_browser_callformat = "%s %s"
 " , is a good choice for <leader>
 let mapleader = ","
 " leader w = new vsplit with focus on new
-nnoremap eader>w <C-w>v<C-w>l
+nnoremap <leader>w <C-w>v<C-w>l
 " Press leader l to toggle highlighting
 nmap <leader><space> :set hlsearch! hlsearch?<CR>
 
@@ -92,4 +92,7 @@ nmap <leader>v <C-w><C-v><C-l>:edit $MYVIMRC<CR>
 " More intuative window movement
 map <C-h> <C-w>h
 map <C-l> <C-w>l
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+
 
