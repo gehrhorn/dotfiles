@@ -71,11 +71,11 @@ map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
-
+"imap <up> <nop>
+"imap <down> <nop>
+"imap <left> <nop>
+"imap <right> <nop>
+"
 " Invisible chars from vimcasts.org
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
@@ -110,3 +110,8 @@ nmap ; :
 set foldmethod=syntax
 set foldnestmax=5
 nnoremap <Space> za
+
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
