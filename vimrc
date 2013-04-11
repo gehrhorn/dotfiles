@@ -88,7 +88,11 @@ nmap <F5> :buffers<CR>:buffer<Space>
 
 " ,v = edit my vimrc
 nmap <leader>v <C-w><C-v><C-l>:edit $MYVIMRC<CR>
-
+" Source the vimrc file after saving it
+if has("autocmd")
+  autocmd bufwritepost .vimrc source $MYVIMRC
+endif
+  
 " More intuative window movement
 map <C-h> <C-w>h
 map <C-l> <C-w>l
