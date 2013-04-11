@@ -15,6 +15,15 @@ set shiftwidth=2
 set number
 set ruler
 
+" Set default searching
+set ignorecase
+set smartcase
+set gdefault
+set incsearch
+
+" Quicker escaping
+inoremap jj <Esc>
+
 " highlight long columns
 match ErrorMsg /\%81v.\+/
 
@@ -24,9 +33,10 @@ let g:haddock_browser_callformat = "%s %s"
 
 " , is a good choice for <leader>
 let mapleader = ","
-
+" leader w = new vsplit with focus on new
+nnoremap eader>w <C-w>v<C-w>l
 " Press leader l to toggle highlighting
-nmap <leader>h :set hlsearch! hlsearch?<CR>
+nmap <leader><space> :set hlsearch! hlsearch?<CR>
 
 " don't put cursor at the start of the line unneccessarily
 set nostartofline
@@ -41,8 +51,6 @@ nnoremap ' `
 nnoremap ` '
 set history=1000
 set wildmode=list:longest
-set ignorecase
-set smartcase
 set title
 set scrolloff=3
 
@@ -79,11 +87,9 @@ highlight SpecialKey guifg=#4a4a59
 nmap <F5> :buffers<CR>:buffer<Space>
 
 " ,v = edit my vimrc
-nmap <leader>v :edit $MYVIMRC<CR>
+nmap <leader>v <C-w><C-v><C-l>:edit $MYVIMRC<CR>
 
 " More intuative window movement
 map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
 map <C-l> <C-w>l
 
