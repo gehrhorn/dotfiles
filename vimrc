@@ -1,4 +1,4 @@
-" Uses the pathogen vim utility to load runtime under .vim/bundle/ 
+  " Uses the pathogen vim utility to load runtime under .vim/bundle/ 
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
@@ -95,4 +95,5 @@ map <C-l> <C-w>l
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 
-
+" Toggle NERDTreeToggle with ,n
+map <leader>n  :NERDTreeToggle<CR>
