@@ -20,6 +20,10 @@ set ignorecase
 set smartcase
 set gdefault
 set incsearch
+nnoremap / /\v
+vnoremap / /\v
+nnoremap <tab> %
+vnoremap <tab> %
 
 " Quicker escaping
 inoremap jj <Esc>
@@ -53,7 +57,7 @@ set history=1000
 set wildmode=list:longest
 set title
 set scrolloff=3
-
+set cursorline
 " Enable solorized color schme
 syntax enable
 set background=dark
@@ -77,7 +81,7 @@ imap <right> <nop>
 nmap <leader>l :set list!<CR>
 
 " Use the same symbols as TextMate for tabstops and EOLs
-set listchars=tab:→\ ,eol:¬
+set listchars=tab:τ\ ,eol:¬
 
 " Invisible character colors
 highlight NonText guifg=#4a4a59
@@ -101,3 +105,8 @@ map <C-k> <C-w>k
 
 " Toggle NERDTreeToggle with ,n
 map <leader>n  :NERDTreeToggle<CR>
+nmap ; :
+
+set foldmethod=syntax
+set foldnestmax=5
+nnoremap <Space> za
