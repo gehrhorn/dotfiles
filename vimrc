@@ -110,3 +110,8 @@ nmap ; :
 set foldmethod=syntax
 set foldnestmax=5
 nnoremap <Space> za
+
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
