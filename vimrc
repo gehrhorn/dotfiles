@@ -3,6 +3,7 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+" Default encoding to make pretty colors and compatability
 set encoding=utf-8
 
 " Tabs instead of spaces
@@ -13,20 +14,21 @@ set shiftwidth=2
 " line numbering
 set number
 set ruler
+
 " highlight long columns
 match ErrorMsg /\%81v.\+/
-
 
 " Configure browser for haskell_doc.vim
 let g:haddock_browser = "open"
 let g:haddock_browser_callformat = "%s %s"
+
+" , is a good choice for <leader>
 let mapleader = ","
 
 " Press leader l to toggle highlighting
 nmap <leader>h :set hlsearch! hlsearch?<CR>
 
 " don't put cursor at the start of the line unneccessarily
-
 set nostartofline
 
 " don't insert leading comment characters when pressing `o` or `O` in normal
@@ -44,6 +46,7 @@ set smartcase
 set title
 set scrolloff=3
 
+" Enable solorized color schme
 syntax enable
 set background=dark
 colorscheme solarized
@@ -72,8 +75,15 @@ set listchars=tab:→\ ,eol:¬
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
+" Easy buffer switching
 nmap <F5> :buffers<CR>:buffer<Space>
 
-let mapleader = ","
+" ,v = edit my vimrc
 nmap <leader>v :edit $MYVIMRC<CR>
+
+" More intuative window movement
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
