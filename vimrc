@@ -40,7 +40,7 @@ let mapleader = ","
 " leader w = new vsplit with focus on new
 nnoremap <leader>w <C-w>v<C-w>l
 " Press leader l to toggle highlighting
-nmap <leader><space> :set hlsearch! hlsearch?<CR>
+nnoremap <leader><space> :set hlsearch! hlsearch?<CR>
 
 " don't put cursor at the start of the line unneccessarily
 set nostartofline
@@ -64,13 +64,13 @@ set background=dark
 colorscheme solarized
 
 " Tagbar configuration
-nmap <F8> :TagbarToggle<CR>
+nnoremap <F8> :TagbarToggle<CR>
 
 " Disable arrows
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
+noremap <up> <nop>
+noremap <down> <nop>
+noremap <left> <nop>
+noremap <right> <nop>
 "imap <up> <nop>
 "imap <down> <nop>
 "imap <left> <nop>
@@ -78,7 +78,7 @@ map <right> <nop>
 "
 " Invisible chars from vimcasts.org
 " Shortcut to rapidly toggle `set list`
-nmap <leader>l :set list!<CR>
+nnoremap <leader>l :set list!<CR>
 
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=tab:τ\ ,eol:¬
@@ -88,24 +88,24 @@ highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
 " Easy buffer switching
-nmap <F5> :buffers<CR>:buffer<Space>
+nnoremap <F5> :buffers<CR>:buffer<Space>
 
 " ,v = edit my vimrc
-nmap <leader>v <C-w><C-v><C-l>:edit $MYVIMRC<CR>
+nnoremap <leader>v <C-w><C-v><C-l>:edit $MYVIMRC<CR>
 " Source the vimrc file after saving it
 if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
 endif
   
 " More intuative window movement
-map <C-h> <C-w>h
-map <C-l> <C-w>l
-map <C-j> <C-w>j
-map <C-k> <C-w>k
+noremap <C-h> <C-w>h
+noremap <C-l> <C-w>l
+noremap <C-j> <C-w>j
+noremap <C-k> <C-w>k
 
 " Toggle NERDTreeToggle with ,n
-map <leader>n  :NERDTreeToggle<CR>
-nmap ; :
+noremap <leader>n  :NERDTreeToggle<CR>
+nnoremap ; :
 
 set foldmethod=syntax
 set foldnestmax=5
