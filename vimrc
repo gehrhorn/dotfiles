@@ -144,16 +144,26 @@ augroup END
 " Toggle NERDTreeToggle with ,n
 noremap <leader>n  :NERDTreeToggle<CR>
 
-" Set folding options
+" Set folding options ---------- {{{
 augroup folding
   set foldmethod=syntax
   set foldnestmax=5
   nnoremap <Space> za
 augroup END
+" ------ }}}
 
+" Rainbow_parens plugin ------------------------- {{{
 augroup rainbow_parens
   au VimEnter * RainbowParenthesesToggle
   au Syntax * RainbowParenthesesLoadRound
   au Syntax * RainbowParenthesesLoadSquare
   au Syntax * RainbowParenthesesLoadBraces
 augroup END
+" }}}
+
+" Vimscript file settings ---------------------- {{{
+augroup filetype_vim
+  autocmd!
+  autocmd FileType vim setlocal foldmethod=marker
+augroup END
+" }}}
