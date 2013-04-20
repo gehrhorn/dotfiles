@@ -1,7 +1,9 @@
 " Uses the pathogen vim utility to load runtime under .vim/bundle/ 
-execute pathogen#infect()
-syntax on
-filetype plugin indent on
+augroup pathogen
+  execute pathogen#infect()
+  syntax on
+  filetype plugin indent on
+augroup END
 
 " Default encoding to make pretty colors and compatability
 set encoding=utf-8
