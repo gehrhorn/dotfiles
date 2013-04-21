@@ -25,7 +25,7 @@ augroup statusline
   set statusline+=%m      "modified flag
   set statusline+=%r      "read only flag
   set statusline+=%y      "filetype
-  set statusline+=%{fugitive#statusline()}
+  set statusline+=%{fugitive#statusline()} "git info
   set statusline+=%=      "left/right separator
   set statusline+=%c,     "cursor column
   set statusline+=%l/%L   "cursor line/total lines
@@ -55,7 +55,10 @@ augroup searching
 augroup END
 
 " Quicker escaping
-inoremap jj <Esc>
+augroup substitutions
+  nnoremap - YddjP
+  inoremap jj <Esc>
+augroup END
 
 " highlight long columns
 match ErrorMsg /\%81v.\+/
