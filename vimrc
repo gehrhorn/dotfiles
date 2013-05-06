@@ -151,6 +151,7 @@ noremap <leader>n  :NERDTreeToggle<CR>
 augroup folding
   set foldmethod=syntax
   set foldnestmax=5
+  set foldlevel=99
   nnoremap <Space> za
 augroup END
 " ------ }}}
@@ -171,3 +172,5 @@ augroup filetype_vim
 augroup END
 " }}}
 
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview 
