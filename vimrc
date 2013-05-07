@@ -174,3 +174,4 @@ augroup END
 
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview 
+nnoremap <leader>z zMzv
