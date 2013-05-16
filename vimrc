@@ -36,6 +36,16 @@ augroup END
 augroup line_numbering
   if version >= 703
     set relativenumber
+
+    function! NumberToggle()
+      if(&relativenumber == 1)
+        set number
+      else
+        set relativenumber
+      endif
+    endfunction
+
+    nnoremap <leader>t :call NumberToggle()<cr>
   else
     set number  
   endif
@@ -174,3 +184,4 @@ augroup END
 
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview 
+
