@@ -32,24 +32,6 @@ augroup statusline
   set statusline+=\ %P    "percent through file
 augroup END
 
-" line numbering
-augroup line_numbering
-  if version >= 703
-    set relativenumber
-
-    function! NumberToggle()
-      if(&relativenumber == 1)
-        set number
-      else
-        set relativenumber
-      endif
-    endfunction
-
-    nnoremap <leader>t :call NumberToggle()<cr>
-  else
-    set number  
-  endif
-augroup END
 
 
 " Set default searching
@@ -84,6 +66,24 @@ nnoremap <leader>w <C-w>v<C-w>l
 " Press leader l to toggle highlighting
 nnoremap <leader><space> :set hlsearch! hlsearch?<CR>
 
+" line numbering
+augroup line_numbering
+  if version >= 703
+    set relativenumber
+
+    function! Numbertoggle()
+      if(&relativenumber == 1)
+        set number
+      else
+        set relativenumber
+      endif
+    endfunction
+
+    nnoremap <leader>t :call Numbertoggle()<cr>
+  else
+    set number  
+  endif
+augroup END
 " don't put cursor at the start of the line unneccessarily
 set nostartofline
 
@@ -186,3 +186,4 @@ autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview 
 
 nnoremap <leader>z zMzv
+set clipboard=exclude:.*
