@@ -89,7 +89,7 @@ set nostartofline
 
 " don't insert leading comment characters when pressing `o` or `O` in normal
 " mode
-set formatoptions-=o
+setlocal formatoptions-=o
 
 " Settings from 'Configuring vim right'
 set hidden
