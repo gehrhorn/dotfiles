@@ -100,7 +100,7 @@ set wildmode=list:longest
 set title
 set scrolloff=3
 set cursorline
-
+set cursorcolumn
 " Enable solorized color schme
 augroup coloring
   syntax enable
