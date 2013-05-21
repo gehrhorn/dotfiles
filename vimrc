@@ -38,7 +38,6 @@ augroup END
 augroup searching
   set ignorecase
   set smartcase
-  set gdefault
   set incsearch
   nnoremap / /\v
   vnoremap / /\v
