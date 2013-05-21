@@ -32,7 +32,7 @@ DISABLE_AUTO_TITLE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ssh-agent ruby rails rails3) 
+plugins=(git ssh-agent ruby rails rails3 safe-paste)
 zstyle :omz:plugins:ssh-agent agent-forwarding on
 source $ZSH/oh-my-zsh.sh
 
