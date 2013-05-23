@@ -181,8 +181,15 @@ augroup filetype_vim
 augroup END
 " }}}
 
-autocmd BufWinLeave *.* mkview
-autocmd BufWinEnter *.* silent loadview 
+augroup filetype_ruby
+  autocmd!
+  autocmd FileType ruby inoremap <C-l> <Space>=><Space>
+  autocmd filetype ruby inoremap <c-k> <c-o>b:<esc>ea
+  autocmd filetype ruby nnoremap <c-k> lbi:<esc>e
+augroup end
 
-nnoremap <leader>z zMzv
+autocmd bufwinleave *.* mkview
+autocmd bufwinenter *.* silent loadview 
+
+nnoremap <leader>z zmzv
 set clipboard=exclude:.*
