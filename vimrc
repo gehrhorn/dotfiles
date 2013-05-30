@@ -193,3 +193,5 @@ autocmd bufwinenter *.* silent loadview
 
 nnoremap <leader>z zmzv
 set clipboard=exclude:.*
+
+let g:neocomplcache_enable_at_startup = 1
