@@ -40,3 +40,6 @@
 [submodule "vim/bundle/neocomplcache"]
 	path = vim/bundle/neocomplcache
 	url = git@github.com:Shougo/neocomplcache.vim.git
+[submodule "vim/bundle/ruby-matchit"]
+	path = vim/bundle/ruby-matchit
+	url = git@github.com:vim-scripts/ruby-matchit.git
