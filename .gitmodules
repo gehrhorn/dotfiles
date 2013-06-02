@@ -4,9 +4,6 @@
 [submodule "vim/bundle/supertab"]
 	path = vim/bundle/supertab
 	url = git@github.com:ervandew/supertab.git
-[submodule "vim/bundle/AutoComplPop"]
-	path = vim/bundle/AutoComplPop
-	url = git@github.com:vim-scripts/AutoComplPop.git
 [submodule "vim/bundle/rainbow_parentheses.vim"]
 	path = vim/bundle/rainbow_parentheses.vim
 	url = git@github.com:kien/rainbow_parentheses.vim.git
@@ -40,3 +37,9 @@
 [submodule "vim/bundle/vim-surround"]
 	path = vim/bundle/vim-surround
 	url = git@github.com:tpope/vim-surround.git
+[submodule "vim/bundle/neocomplcache"]
+	path = vim/bundle/neocomplcache
+	url = git@github.com:Shougo/neocomplcache.vim.git
+[submodule "vim/bundle/ruby-matchit"]
+	path = vim/bundle/ruby-matchit
+	url = git@github.com:vim-scripts/ruby-matchit.git

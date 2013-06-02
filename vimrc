@@ -186,6 +186,12 @@ augroup filetype_ruby
   autocmd FileType ruby inoremap <C-l> <Space>=><Space>
   autocmd filetype ruby inoremap <c-k> <c-o>b:<esc>ea
   autocmd filetype ruby nnoremap <c-k> lbi:<esc>e
+  autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
+  autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+  autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+  autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
+  "improve autocomplete menu color
+  highlight Pmenu ctermbg=238 gui=bold
 augroup end
 
 autocmd bufwinleave *.* mkview
@@ -193,3 +199,5 @@ autocmd bufwinenter *.* silent loadview
 
 nnoremap <leader>z zmzv
 set clipboard=exclude:.*
+
+let g:neocomplcache_enable_at_startup = 1
