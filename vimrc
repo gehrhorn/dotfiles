@@ -1,5 +1,5 @@
-" Uses the pathogen vim utility to load runtime under .vim/bundle/ 
 augroup pathogen
+" Uses the pathogen vim utility to load runtime under .vim/bundle/ 
   execute pathogen#infect()
   syntax on
   filetype plugin indent on
@@ -201,3 +201,4 @@ nnoremap <leader>z zmzv
 set clipboard=exclude:.*
 
 let g:neocomplcache_enable_at_startup = 1
+let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
