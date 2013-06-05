@@ -184,7 +184,7 @@ augroup end
 autocmd bufwinleave *.* mkview
 autocmd bufwinenter *.* silent loadview 
 
-nnoremap <leader>z zmzv
+nnoremap <leader>z zMzv
 augroup pathogen
 augroup pathogen
 set clipboard=exclude:.*
