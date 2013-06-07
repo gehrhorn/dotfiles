@@ -116,7 +116,7 @@ augroup vim_training
   noremap <down> <nop>
   noremap <left> <nop>
   noremap <right> <nop>
-  nnoremap ; :
+  nnoremap <space> :
   nnoremap : <nop>
   inoremap <C-C> <Nop>
 augroup END
@@ -161,7 +161,7 @@ augroup folding
   set foldmethod=syntax
   set foldnestmax=5
   set foldlevel=99
-  nnoremap <Space> za
+  nnoremap <leader>f za
 augroup END
 " ------ }}}
 
