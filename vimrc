@@ -2,6 +2,7 @@
   execute pathogen#infect()
   syntax on
   filetype plugin indent on
+  set synmaxcol=2048
 " }}}
 
 " Default encoding to make pretty colors and compatability
