@@ -104,15 +104,16 @@ colorscheme solarized
 " Tagbar configuration
 nnoremap <F8> :TagbarToggle<CR>
 
-" Disable arrows {{{
-noremap <up> <nop>
-noremap <down> <nop>
-noremap <left> <nop>
-noremap <right> <nop>
-nnoremap <space> :
-nnoremap : <nop>
-inoremap <C-C> <Nop>
-" }}}
+" Disable arrows
+augroup vim_training
+  noremap <up> <nop>
+  noremap <down> <nop>
+  noremap <left> <nop>
+  noremap <right> <nop>
+  nnoremap <space> :
+  nnoremap : <nop>
+  inoremap <C-C> <Nop>
+augroup END
 
 " Setting whitespace options {{{
 " Invisible chars from vimcasts.org
@@ -149,10 +150,12 @@ noremap <C-k> <C-w>k
 noremap <leader>n  :NERDTreeToggle<CR>
 
 " Set folding options ---------- {{{
-set foldmethod=syntax
-set foldnestmax=5
-set foldlevel=99
-nnoremap <leader>f za
+augroup folding
+  set foldmethod=syntax
+  set foldnestmax=5
+  set foldlevel=99
+  nnoremap <leader>f za
+augroup END
 " ------ }}}
 
 " Rainbow_parens plugin ------------------------- {{{
