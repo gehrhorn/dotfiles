@@ -197,5 +197,4 @@ let g:neocomplcache_enable_at_startup = 1
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 
 au BufNewFile,BufRead *.yaml set filetype=yaml
-
 let g:Powerline_symbols='fancy'
