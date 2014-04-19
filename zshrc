@@ -42,5 +42,5 @@ source $ZSH/oh-my-zsh.sh
 # Mac book colors
 export CLICOLOR=1
 export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
-
+export GOPATH=$HOME/go
 PATH=/usr/local/bin:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
