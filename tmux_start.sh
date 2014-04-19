@@ -2,7 +2,7 @@
 
 tmux new -d -s gehrhorn
 
-tmux new-window -t gehrhorn -n 'Editor'
+tmux rename-window  'Editor'
 tmux new-window -t gehrhorn -n 'Cmd'
 tmux new-window -t gehrhorn -n 'Scratch'
 tmux new-window -t gehrhorn -n 'Man'

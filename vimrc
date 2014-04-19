@@ -199,8 +199,11 @@ let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 
 au BufNewFile,BufRead *.yaml set filetype=yaml
 let g:Powerline_symbols='unicode'
+<<<<<<< HEAD
 
 set rtp+=/usr/local/go/misc/vim
 filetype plugin indent on
 syntax on
 
+=======
+>>>>>>> fc04bc3ff0c1ec07761f3568c382fae1bdabf912
