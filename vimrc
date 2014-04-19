@@ -199,3 +199,9 @@ let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 
 au BufNewFile,BufRead *.yaml set filetype=yaml
 let g:Powerline_symbols='unicode'
+
+filetype off
+filetype plugin indent off
+set runtimepath+=/usr/local/go/misc/vim
+filetype plugin indent on
+syntax on
