@@ -1,2 +1,2 @@
 # Dotfiles
-These are my dotfiles. They change a lot.
+These are my dotfiles. There are many like them, but these are mine. 
